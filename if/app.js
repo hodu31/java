@@ -46,3 +46,4 @@ if (password.indexOf('') === -1) {
 } else { 
     console.log("password cannot contain spaces!")
 }
+
