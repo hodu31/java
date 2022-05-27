@@ -11,6 +11,11 @@ const testScores = {
     vonnie: 60
 }
 
-for (let person in testScores) {
-    console.log('${person} scored ${testScores[person]}') 
+//for (let person in testScores) {
+//    console.log(`${person} scored ${testScores[person]}`) 
+//}
+
+let total = 0;
+for(let score of Object.values(testScores)) {
+    total += score;
 }
