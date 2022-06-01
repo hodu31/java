@@ -84,3 +84,88 @@ function returnDay (input) {
         return null
     }
 }
+
+let bird = 'Scarlet Macaw';
+function birdWatch() {
+    let bird = 'Great Blue Heron';
+    console.log(bird);
+}
+birdWatch
+
+function bankRobbery() {
+    const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Bat Women']
+    function cryForHelp() {
+        for (let hero of heroes) {
+            console.log(`PLEASE HELP US, ${hero.toUppercase()}`);
+        }
+    }
+    cryForHelp();
+}
+
+function callTwice(func) {
+    func();
+    func();
+}
+
+function callTenTimes(f){
+    for(let  i = 0; i < 10; i++){
+        f()
+    }
+}
+
+function rollDie() {
+     const roll = Math.floor(Math.random() * 6) + 1
+     console.log(roll)
+}
+
+function makeBetweenFunc(min, max) {
+    return function (num) {
+        return num >= min && num <= max;
+    }
+}
+
+const myMath = {
+    PI: 3.14159,
+    square(num) {
+        return num * num;
+    },
+    cube(num) {
+        return num ** 3;
+    }
+}
+
+//coding exercise 45
+
+const square = {
+    area (input) {
+        return input * input;
+    },
+    perimeter(input) {
+        return input * 4;
+    }
+}
+
+//217 lecture
+
+const cat = {
+    name: 'Blue Steele',
+    color: 'grey',
+    breed: 'scottish fold',
+    meow() {
+        console.log("THIS IS:", this)
+        console.log(`${this.name} says MEOWWWW`);
+    }
+}
+
+const meow2 = cat.meow;
+
+//coding exercise 46
+
+const hen = {
+    name : 'Helen',
+    eggCount :  0,
+    layAnEgg() {
+        this.eggCount += 1;
+        return "EGG";
+    }
+}
