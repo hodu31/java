@@ -63,3 +63,9 @@ const recentMovies = movies.filter(m => m.year > 2000)
 // const goodTitles = goodMovies.map(m => m.title)
 
 movies.filter(m => m.score > 80).map(m => m.title);
+
+
+// coding exercise 49 
+const validUserNames = function (named) { const output = named.filter(n => {return n.length < 10})
+return output
+}
